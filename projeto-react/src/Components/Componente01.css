@@ -1,0 +1,44 @@
+.conteudo{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 0fr);
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(243, 201, 147);
+    border-radius: 20px;
+    margin: 0vh 10vh 10vh 10vh;
+    padding: 5vh;
+}
+
+.batom{
+    grid-row: 1/1;
+    grid-column: 2/2;
+}
+
+.gloss{
+    grid-row: 1/1;
+    grid-column: 3/3;
+}
+.base{
+    grid-row: 1/1;
+    grid-column: 4/4;
+}
+
+.comprar{
+    cursor: pointer;
+    width: 20vh;
+    margin: 5vh;
+    padding: 2vh;
+    color: white;
+    border: solid 1px black;
+    background-color: black;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.comprar:hover{
+    transform: scale(1.1);
+}
